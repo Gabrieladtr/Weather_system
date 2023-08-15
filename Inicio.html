@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <!--<link rel="stylesheet" href="inicio.css">  Adicione o link para o seu arquivo CSS -->
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: rgb(127, 117, 117);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        header, main, footer {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header:hover {
+            background-color: #555;
+            transition: background-color 0.3s ease;
+        }
+        section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    </style>
+    <script src="inicio.js" defer></script> <!-- Adicione o link para o seu arquivo JavaScript -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Site</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Alguma descrição sobre o seu site ou negócio.</p>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <div class="container">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Desenvolvimento Web</li>
+                    <li>Consultoria em TI</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
